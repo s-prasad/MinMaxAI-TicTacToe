@@ -12,27 +12,6 @@ public class Main {
         program.start();
     }
 
-/*    private void userInput() {
-        int counter = 0;
-        System.out.print("Enter cells: ");
-        line = scanner.nextLine();
-        line = line.replace("\"", "");
-
-        for (int i=0; i<board.length; i++) {
-            for (int j=0; j<board.length; j++) {
-                board[i][j] = line.charAt(counter);
-
-                if (line.charAt(counter) == 'X') {
-                    numX++;
-                } else if (line.charAt(counter) == 'O') {
-                    numO++;
-                }
-
-                counter++;
-            }
-        }
-    }*/
-
     private void gameInitalize() {
         for (int i = 0; i< board.length; i++) {
             for (int j = 0; j< board.length; j++) {
@@ -287,11 +266,6 @@ public class Main {
                 }
             }
         }
-
-/*        if (Math.abs(numX - numO) >= 2) {
-            gamestate = "Impossible";
-            return true;
-        }*/
 
         //check horizontal
         for (int i = 0; i< board.length; i++) {
